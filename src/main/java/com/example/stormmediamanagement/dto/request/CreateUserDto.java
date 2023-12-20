@@ -10,8 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-@Schema(defaultValue = "Create User")
 public class CreateUserDto {
 
     @Schema(defaultValue = "username" ,example = "tuan")
@@ -19,7 +17,7 @@ public class CreateUserDto {
     @NotEmpty(message = "username cannot be empty!")
     private String username;
 
-    @Schema(defaultValue = "password" ,example = "password")
+    @Schema(defaultValue = "password" ,example = "123456")
     @NotNull(message = "password cannot be null!")
     @NotEmpty(message = "password cannot be empty!")
     private String password;

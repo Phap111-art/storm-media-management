@@ -11,14 +11,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(defaultValue = "Login User")
 public class LoginUserDto {
     @Schema(defaultValue = "username" , example = "tuan")
     @NotNull(message = "username cannot be null!")
     @NotEmpty(message = "username cannot be empty!")
     private String username;
 
-    @Schema(defaultValue = "password" , example = "123")
+    @Schema(defaultValue = "password" , example = "123456")
     @NotNull(message = "password cannot be null!")
     @NotEmpty(message = "password cannot be empty!")
     private String password;
