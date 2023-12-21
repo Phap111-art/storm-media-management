@@ -1,18 +1,18 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : My-DB
+ Source Server         : PG15
  Source Server Type    : PostgreSQL
- Source Server Version : 110021
+ Source Server Version : 120017
  Source Host           : localhost:5432
  Source Catalog        : storm-media-management
  Source Schema         : public
 
  Target Server Type    : PostgreSQL
- Target Server Version : 110021
+ Target Server Version : 120017
  File Encoding         : 65001
 
- Date: 20/12/2023 16:38:39
+ Date: 21/12/2023 10:08:24
 */
 
 
@@ -74,11 +74,11 @@ CREATE TABLE "public"."storms" (
 -- ----------------------------
 -- Records of storms
 -- ----------------------------
-INSERT INTO "public"."storms" VALUES ('4703c650-369c-493e-bfad-167214cacae4', 1, 'da nang', '2023-12-20 16:17:53.378887');
-INSERT INTO "public"."storms" VALUES ('ca6a917e-5e59-4fa8-a241-dbd42a833147', 2, 'hue', '2023-12-20 16:17:53.380888');
-INSERT INTO "public"."storms" VALUES ('aa3dfd2f-a6d8-440e-9f76-385fcd0e1eef', 2, 'quy nhon', '2023-12-20 16:17:53.381886');
-INSERT INTO "public"."storms" VALUES ('4ec9245a-284e-4613-b677-90f9ad5fd273', 2, 'hanoi', '2023-12-20 16:17:53.381886');
-INSERT INTO "public"."storms" VALUES ('d02a305e-629a-490b-9a0a-5933094e0427', 2, 'saigon', '2023-12-20 16:17:53.381886');
+INSERT INTO "public"."storms" VALUES ('8b092057-f41d-4aa0-be76-49815ba3c6e4', 1, 'da nang', '2023-12-21 10:04:32.910866');
+INSERT INTO "public"."storms" VALUES ('b11b7b30-db85-41fb-b0ef-6fd67860c30b', 2, 'hue', '2023-12-21 10:04:32.914861');
+INSERT INTO "public"."storms" VALUES ('3ddcf7cb-9235-40de-8ece-c014e7dcb555', 2, 'quy nhon', '2023-12-21 10:04:32.914861');
+INSERT INTO "public"."storms" VALUES ('a874632e-e1d3-4464-9465-42a112bcf1ae', 2, 'hanoi', '2023-12-21 10:04:32.914861');
+INSERT INTO "public"."storms" VALUES ('c58378e0-8142-41b2-8aa1-28dd0ba1dd4f', 2, 'saigon', '2023-12-21 10:04:32.915862');
 
 -- ----------------------------
 -- Table structure for users
@@ -87,7 +87,7 @@ DROP TABLE IF EXISTS "public"."users";
 CREATE TABLE "public"."users" (
   "user_id" uuid NOT NULL,
   "created_at" timestamp(6),
-  "password" varchar(20) COLLATE "pg_catalog"."default",
+  "password" varchar(250) COLLATE "pg_catalog"."default",
   "updated_at" timestamp(6),
   "username" varchar(20) COLLATE "pg_catalog"."default"
 )
@@ -97,6 +97,7 @@ CREATE TABLE "public"."users" (
 -- Records of users
 -- ----------------------------
 INSERT INTO "public"."users" VALUES ('0ac99942-2a8e-48e5-b20f-7d8043251b0e', '2023-12-20 15:46:24.159904', '123', NULL, 'thongnguyen');
+INSERT INTO "public"."users" VALUES ('a9dc819e-7f02-49a4-8f93-20bd5a5ef7e2', '2023-12-21 10:06:12.136155', 'lRy2c5x6epk/6fHRVAT+u+pqVxfOGpR2vdWiRE7nPfw=', NULL, 'tuan');
 
 -- ----------------------------
 -- Alter sequences owned by
